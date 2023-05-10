@@ -191,8 +191,6 @@ const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
 const f5 = document.getElementById("f5");
 
-console.log(f5);
-
 // Eventos de escuta do mouse
 
 rock.addEventListener("click", () => {
