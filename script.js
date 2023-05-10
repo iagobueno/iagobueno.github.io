@@ -72,9 +72,9 @@ function game(pChoice, cChoice) {
     switch (pChoice) {
         case "rock":
             if (cChoice == "paper") {
-                gameStatus = "loose";
+                gameStatus = "lose";
                 computerScore++;
-                return "Paper rules rock, you loose!";
+                return "Paper rules rock, you lose!";
             }
             playerScore++;
             gameStatus = "win";
@@ -86,14 +86,14 @@ function game(pChoice, cChoice) {
                 return "Paper rules rock, you win!";
             }
             computerScore++;
-            gameStatus = "loose";
-            return "Scissors rules paper, you loose!";
+            gameStatus = "lose";
+            return "Scissors rules paper, you lose!";
 
         case "scissors":
             if (cChoice == "rock") {
                 computerScore++;
-                gameStatus = "loose";
-                return "Rock rules scissors, you loose!";
+                gameStatus = "lose";
+                return "Rock rules scissors, you lose!";
             }
             playerScore++;
             gameStatus = "win";
@@ -111,7 +111,7 @@ function boardColor(side) {
         }
         return "#ff726f";
     }
-    else if (gameStatus == "loose") {
+    else if (gameStatus == "lose") {
         if (side == "left") {
             return "#ff726f";
         }
