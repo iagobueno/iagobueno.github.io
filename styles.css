@@ -16,11 +16,26 @@ button {
     border-radius: 20%;
     padding: 6%;
     background-color: #f8ff1d;
-    box-shadow: 1px 1px 0px 6px black;
+    box-shadow: 2px 2px 0px 6px black;
     transition-duration: 0.4s;
 }
 
 button:hover {
+    background-color: #9c7bff;
+    cursor: pointer;
+}
+
+#f5 {
+    margin-top: 10%;
+    padding: 3%;
+    background-color: #d3d3d3;
+}
+
+.reset {
+    font-size: 2em;
+}
+
+#f5:hover {
     background-color: #9c7bff;
     cursor: pointer;
 }
@@ -35,7 +50,7 @@ button:hover {
 }
 
 .board {
-    margin-top: 20%;
+    margin-top: 15%;
     display: flex;
     justify-content: space-evenly;
     gap: 20%;
@@ -46,10 +61,8 @@ button:hover {
     background-color: #f8ff1d;
     font-size: 4em;
     border-radius: 10%;
-    box-shadow: 1px 1px 0px 6px black;
+    box-shadow: 2px 2px 0px 6px black;
 }
-
-
 
 .board .box .name {
     font-size: 0.5em;
