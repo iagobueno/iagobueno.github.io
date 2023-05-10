@@ -17,6 +17,12 @@ button {
     padding: 6%;
     background-color: #f8ff1d;
     box-shadow: 1px 1px 0px 6px black;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #9c7bff;
+    cursor: pointer;
 }
 
 #score,
@@ -42,6 +48,8 @@ button {
     border-radius: 10%;
     box-shadow: 1px 1px 0px 6px black;
 }
+
+
 
 .board .box .name {
     font-size: 0.5em;
