@@ -157,9 +157,17 @@ function showResults(r) {
 
     // Altera o score global
     const score = document.getElementById("score");
-    pEmoji = returnPlayerEmoji();
-    cEmoji = returnComputerEmoji();
-    score.innerHTML = `${pEmoji} ${playerScore} VS ${computerScore} ${cEmoji}`;
+    score.innerHTML = `${playerScore} VS ${computerScore}`;
+
+    // Altera emoji esquerdo do score
+    const leftEmoji = document.getElementById("player-score-emoji");
+    leftEmoji.style.display = "inline";
+    leftEmoji.innerHTML = returnPlayerEmoji();
+
+    // Altera emoji direito do score
+    const rightEmoji = document.getElementById("computer-score-emoji");
+    rightEmoji.style.display = "inline";
+    rightEmoji.innerHTML = returnComputerEmoji();
 
     // Altera o emoji do player
     const playerEmj = document.getElementById("player-emoji");
